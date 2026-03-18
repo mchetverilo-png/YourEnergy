@@ -1,0 +1,9 @@
+import './js/quote-block.js';
+import './js/filters-panel.js';
+import './js/categories-list.js';
+import './js/exercises-list.js';
+import './js/modal-exercise.js';
+import './js/modal-rating.js';
+import './js/search.js';
+import './js/pagination.js';
+import './js/favorites.js';
