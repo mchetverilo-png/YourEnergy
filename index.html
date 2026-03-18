@@ -1,128 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/YourEnergy/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/YourEnergy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/YourEnergy/assets/styles-DvPDDfy5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/YourEnergy/assets/styles-Cv7sVz5Z.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/YourEnergy/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <section class="hero">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
+    <div class="hero-wrapper">
+      <div>
+        <h1 class="hero-title">
+          <svg class="hero-icon" width="38" height="38">
+            <use href="/YourEnergy/assets/icons-D7ptP1U0.svg#sun"></use>
+          </svg>
+          <span>Get Body in </span><span>shape, Stay healthy</span>
+        </h1>
+        <p class="hero-text">
+          Transform your physique and embrace a healthier lifestyle with our
+          comprehensive fitness and nutrition support.
+        </p>
+      </div>
+      <div class="hero-image-wrapper">
         <img
-          class="pic"
-          src="/YourEnergy/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
+          srcset="data:image/jpeg;base64,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 1x, /YourEnergy/assets/image-desktop@2x-AnVxaWgd.jpg 2x"
+          src="data:image/jpeg;base64,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"
+          alt="Young Women doing fitness"
         />
-      </a>
+        <ul class="tags">
+          <li>
+            <button class="tags-button" type="button">#Sport</button>
+          </li>
+          <li>
+            <button class="tags-button" type="button">#Healthy</button>
+          </li>
+          <li>
+            <button class="tags-button" type="button">#Workout</button>
+          </li>
+          <li>
+            <button class="tags-button" type="button">#Diet</button>
+          </li>
+        </ul>
+      </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="/YourEnergy/assets/hero-desktop@1x-CQfMS-Xo.jpg 1x, /YourEnergy/assets/hero-desktop@2x-CUBBp-nM.jpg 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/YourEnergy/assets/hero-tablet@1x-BunTNwaN.jpg 1x, /YourEnergy/assets/hero-tablet@2x-B0LVEtd7.jpg 2x"
+      />
+      <img
+        class="hero-image"
+        src="/YourEnergy/assets/hero-mobile@1x-7GcPlf-h.jpg"
+        srcset="/YourEnergy/assets/hero-mobile@1x-7GcPlf-h.jpg 1x, /YourEnergy/assets/hero-mobile@2x-N6mow3fH.jpg 2x"
+        alt="Women working outside"
+      />
+    </picture>
+    <ul class="tags">
+      <li>
+        <button class="tags-button" type="button">#Sport</button>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li>
+        <button class="tags-button" type="button">#Healthy</button>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li>
+        <button class="tags-button" type="button">#Workout</button>
+      </li>
+      <li>
+        <button class="tags-button" type="button">#Diet</button>
       </li>
     </ul>
   </div>
-</article>
+</section>
 
+      <section class="exercises">
+  <div class="container">
+    <div>
+      <h2 class="exercises-title">Exercises</h2>
+      <ul class="exercises-filter">
+        <li>
+          <button
+            class="exercises-filter-btn exercises-filter-btn-active"
+            type="button"
+          >
+            Muscles
+          </button>
+        </li>
+        <li>
+          <button class="exercises-filter-btn" type="button">Body parts</button>
+        </li>
+        <li>
+          <button class="exercises-filter-btn" type="button">Equipment</button>
+        </li>
+      </ul>
+    </div>
+    <ul class="exercises-list"></ul>
+    <div class="exercises-info">
+      <div></div>
+      <img
+        srcset="/YourEnergy/assets/women-talking@1x-BMQ5KAVD.jpg 1x, /YourEnergy/assets/women-talking@2x-D9s00hYa.jpg 2x"
+        src="/YourEnergy/assets/women-talking@1x-BMQ5KAVD.jpg"
+        alt="Young Women Talking During Brake"
+      />
+      <div></div>
+    </div>
+  </div>
+</section>
+
+      <!-- <div class="quote-block">
+    <p id="quote"></p>
+    <p id="author"></p>
+  </div>
+
+  <div class="filters-panel">
+    <button data-filter="Muscles" class="filter-btn">Muscles</button>
+    <button data-filter="Body parts" class="filter-btn">Body parts</button>
+    <button data-filter="Equipment" class="filter-btn">Equipment</button>
+  </div>
+
+  <div id="categories-container"></div> -->
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <!-- <div id="exercise-modal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn">✖</button>
+    <h2 class="modal-title"></h2>
+    <p><strong>Target:</strong> <span class="modal-target"></span></p>
+    <p><strong>Body part:</strong> <span class="modal-bodypart"></span></p>
+    <p><strong>Calories:</strong> <span class="modal-calories"></span></p>
+    <p class="modal-description"></p>
   </div>
-</footer>
-
-
+</div> -->
   </body>
 </html>
